@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    skjhdkjshkjsfdhkj
     <div></div>
     <script>
         var a = document.querySelector('div');
@@ -14,7 +13,35 @@
         for (let i = 0; i < 100; i ++) {
             document.write(i + ' ')
         }
+        (function(){
+            console.log('jhej')
+        }())
         document.write('hehe')
+        var str = document.querySelector('html');
+        console.log(str)
+        
+        F.prototype.name = 'sss';
+        function F (){}
+        var f = new F();
+
+        C.prototype = f;
+        function C () {
+            var a = 2;
+            var b = 1;
+        }
+        var c = new C ();
+
+        B.prototype = c;
+        function B () {
+            var a = 3;
+            var c = 1;
+        }
+        var b = new B();
+        var obj = {
+            name : 'zhu'
+        }
+        B.call(obj)
+        console.log(this.name)
     </script>
 </body>
 </html>
